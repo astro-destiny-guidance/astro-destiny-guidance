@@ -2,90 +2,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Astro-Destiny-Guidance</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #100d24;
-      color: white;
-      text-align: center;
-    }
-    header {
-      padding: 24px 12px;
-      background: #211443;
-      border-bottom: 2px solid #d6ad55;
-    }
-    h1 { color: #f6d783; margin-bottom: 8px; }
-    .hero { padding: 55px 18px; }
-    .hero h2 { font-size: 30px; color: #f6d783; }
-    p { line-height: 1.7; color: #e4def2; }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-      gap: 16px;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-    .card {
-      background: #211a3b;
-      border: 1px solid #6d5595;
-      border-radius: 14px;
-      padding: 22px;
-    }
-    .card h3 { color: #f6d783; }
-    .btn {
-      display: inline-block;
-      background: #d6ad55;
-      color: #160f25;
-      padding: 13px 22px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 12px;
-    }
-    footer { padding: 25px; color: #c6b9df; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Astro Destiny Guidance</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#100d24;color:white;text-align:center}
+header{padding:24px 12px;background:#211443;border-bottom:2px solid #d6ad55}
+h1,h2,h3{color:#f6d783}
+.hero{padding:45px 18px}
+.hero h2{font-size:30px}
+p{line-height:1.7;color:#e4def2}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:900px;margin:auto;padding:20px}
+.card{background:#211a3b;border:1px solid #6d5595;border-radius:14px;padding:22px}
+.btn{display:inline-block;background:#d6ad55;color:#160f25;padding:13px 22px;border-radius:8px;text-decoration:none;font-weight:bold;margin:10px}
+.prices{font-size:26px;font-weight:bold;color:#f6d783}
+footer{padding:25px;background:#211443;margin-top:25px}
+</style>
 </head>
 <body>
-  <header>
-    <h1>✨ Astro-Destiny-Guidance ✨</h1>
-    <p>Discover Your Path • Understand Your Destiny</p>
-  </header>
+<header>
+<h1>✨ Astro Destiny Guidance ✨</h1>
+<p>Discover Your Path • Understand Your Destiny</p>
+<p>आपकी जिंदगी, आपका मार्ग, आपका भविष्य</p>
+</header>
 
-  <section class="hero">
-    <h2>Your Journey, Your Destiny</h2>
-    <p>Guidance for your life, career, relationships and prosperity.</p>
-    <a class="btn" href="#services">Explore Our Services</a>
-  </section>
+<section class="hero">
+<h2>Your Journey, Your Destiny</h2>
+<p>Astrology, Numerology aur Vastu ke zariye apne jeevan ko samajhne ke liye consultation lein.</p>
+<p>अपने जीवन, करियर, रिश्तों और समृद्धि के लिए मार्गदर्शन प्राप्त करें।</p>
+<a class="btn" href="#services">Our Services / हमारी सेवाएँ</a>
+</section>
 
-  <h2 id="services" style="color:#f6d783">Our Services</h2>
-  <section class="services">
-    <div class="card">
-      <h3>🔮 Astrology</h3>
-      <p>Personal horoscope and birth chart guidance.</p>
-    </div>
-    <div class="card">
-      <h3>🔢 Numerology</h3>
-      <p>Name numbers and numerology consultations.</p>
-    </div>
-    <div class="card">
-      <h3>🏡 Vastu Guidance</h3>
-      <p>Vastu tips for your home and workplace.</p>
-    </div>
-    <div class="card">
-      <h3>💎 Gemstone Guidance</h3>
-      <p>Learn about gemstones and crystal traditions.</p>
-    </div>
-  </section>
+<h2 id="services">Our Services / हमारी सेवाएँ</h2>
+<section class="services">
+<div class="card">
+<h3>🔮 Astrology / ज्योतिष</h3>
+<p>Birth chart aur personal horoscope guidance.</p>
+</div>
+<div class="card">
+<h3>🔢 Numerology / अंक ज्योतिष</h3>
+<p>Name number aur numerology consultation.</p>
+</div>
+<div class="card">
+<h3>🏡 Vastu Guidance / वास्तु</h3>
+<p>Ghar aur workplace ke liye Vastu guidance.</p>
+</div>
+<div class="card">
+<h3>💎 Gemstone Guidance / रत्न मार्गदर्शन</h3>
+<p>Gemstones aur crystals ke baare mein guidance.</p>
+</div>
+</section>
 
-  <footer>
-    <p>Astro-Destiny-Guidance</p>
-    <p>For consultations and appointments, contact us.</p>
-  </footer>
+<h2>Consultation Fees / परामर्श शुल्क</h2>
+<section class="services">
+<div class="card">
+<h3>Basic</h3>
+<p class="prices">₹199</p>
+<p>Basic consultation</p>
+</div>
+<div class="card">
+<h3>Standard</h3>
+<p class="prices">₹299</p>
+<p>Detailed guidance</p>
+</div>
+<div class="card">
+<h3>Premium</h3>
+<p class="prices">₹499</p>
+<p>Extended consultation</p>
+</div>
+</section>
+
+<section class="hero" id="booking">
+<h2>Book Your Consultation</h2>
+<p>अपनी consultation book करने के लिए संपर्क करें।</p>
+<p>WhatsApp booking details will be added soon.</p>
+</section>
+
+<footer>
+<p>© Astro Destiny Guidance</p>
+<p>For consultation and appointments</p>
+</footer>
 </body>
 </html>
