@@ -8,16 +8,20 @@
 <style>
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial,sans-serif;background:#100d24;color:white;text-align:center}
-header{padding:24px 12px;background:#211443;border-bottom:2px solid #d6ad55}
+header,footer{padding:24px 12px;background:#211443}
+header{border-bottom:2px solid #d6ad55}
 h1,h2,h3{color:#f6d783}
-.hero{padding:45px 18px}
-.hero h2{font-size:30px}
+.hero{padding:35px 18px}
 p{line-height:1.7;color:#e4def2}
 .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:900px;margin:auto;padding:20px}
 .card{background:#211a3b;border:1px solid #6d5595;border-radius:14px;padding:22px}
-.btn{display:inline-block;background:#d6ad55;color:#160f25;padding:13px 22px;border-radius:8px;text-decoration:none;font-weight:bold;margin:10px}
 .prices{font-size:26px;font-weight:bold;color:#f6d783}
-footer{padding:25px;background:#211443;margin-top:25px}
+.btn{display:inline-block;background:#d6ad55;color:#160f25;padding:13px 22px;border:0;border-radius:8px;text-decoration:none;font-weight:bold;margin:10px;cursor:pointer}
+form{max-width:500px;margin:20px auto;padding:22px;background:#211a3b;border:1px solid #6d5595;border-radius:14px;text-align:left}
+label{display:block;margin:14px 0 6px;color:#f6d783}
+input,select,textarea{width:100%;padding:12px;border-radius:7px;border:1px solid #9b8bb8;font-size:16px}
+form button{width:100%;margin:20px 0 0}
+.note{font-size:14px}
 </style>
 </head>
 <body>
@@ -29,54 +33,65 @@ footer{padding:25px;background:#211443;margin-top:25px}
 
 <section class="hero">
 <h2>Your Journey, Your Destiny</h2>
-<p>Astrology, Numerology aur Vastu ke zariye apne jeevan ko samajhne ke liye consultation lein.</p>
-<p>अपने जीवन, करियर, रिश्तों और समृद्धि के लिए मार्गदर्शन प्राप्त करें।</p>
+<p>Astrology, Numerology aur Vastu ke zariye apne jeevan ke liye guidance lein.</p>
+<p>अपने जीवन, करियर और रिश्तों के लिए मार्गदर्शन प्राप्त करें।</p>
 <a class="btn" href="#services">Our Services / हमारी सेवाएँ</a>
+<a class="btn" href="#booking">Book Now / बुक करें</a>
 </section>
 
 <h2 id="services">Our Services / हमारी सेवाएँ</h2>
 <section class="services">
-<div class="card">
-<h3>🔮 Astrology / ज्योतिष</h3>
-<p>Birth chart aur personal horoscope guidance.</p>
-</div>
-<div class="card">
-<h3>🔢 Numerology / अंक ज्योतिष</h3>
-<p>Name number aur numerology consultation.</p>
-</div>
-<div class="card">
-<h3>🏡 Vastu Guidance / वास्तु</h3>
-<p>Ghar aur workplace ke liye Vastu guidance.</p>
-</div>
-<div class="card">
-<h3>💎 Gemstone Guidance / रत्न मार्गदर्शन</h3>
-<p>Gemstones aur crystals ke baare mein guidance.</p>
-</div>
+<div class="card"><h3>🔮 Astrology / ज्योतिष</h3><p>Birth chart aur horoscope guidance.</p></div>
+<div class="card"><h3>🔢 Numerology / अंक ज्योतिष</h3><p>Name number aur numerology consultation.</p></div>
+<div class="card"><h3>🏡 Vastu Guidance / वास्तु</h3><p>Ghar aur workplace ke liye Vastu guidance.</p></div>
+<div class="card"><h3>💎 Gemstone Guidance / रत्न</h3><p>Gemstones aur crystals ke baare mein guidance.</p></div>
 </section>
 
 <h2>Consultation Fees / परामर्श शुल्क</h2>
 <section class="services">
-<div class="card">
-<h3>Basic</h3>
-<p class="prices">₹199</p>
-<p>Basic consultation</p>
-</div>
-<div class="card">
-<h3>Standard</h3>
-<p class="prices">₹299</p>
-<p>Detailed guidance</p>
-</div>
-<div class="card">
-<h3>Premium</h3>
-<p class="prices">₹499</p>
-<p>Extended consultation</p>
-</div>
+<div class="card"><h3>Basic</h3><p class="prices">₹199</p><p>Basic consultation</p></div>
+<div class="card"><h3>Standard</h3><p class="prices">₹299</p><p>Detailed guidance</p></div>
+<div class="card"><h3>Premium</h3><p class="prices">₹499</p><p>Extended consultation</p></div>
 </section>
 
 <section class="hero" id="booking">
 <h2>Book Your Consultation</h2>
-<p>अपनी consultation book करने के लिए संपर्क करें।</p>
-<p>WhatsApp booking details will be added soon.</p>
+<p>अपनी consultation book करने के लिए नीचे form भरें।</p>
+
+<form action="https://formsubmit.co/borahabhilash37@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New Astro Destiny Guidance Booking">
+<input type="hidden" name="_template" value="table">
+
+<label for="name">Full Name / पूरा नाम</label>
+<input id="name" type="text" name="Name" placeholder="Enter your name" required>
+
+<label for="phone">Mobile Number / मोबाइल नंबर</label>
+<input id="phone" type="tel" name="Mobile Number" placeholder="Enter your mobile number" pattern="[0-9+ ()-]{8,20}" required>
+
+<label for="service">Select Service / सेवा चुनें</label>
+<select id="service" name="Consultation Service" required>
+<option value="">Choose a service</option>
+<option>Astrology</option>
+<option>Numerology</option>
+<option>Vastu Guidance</option>
+<option>Gemstone Guidance</option>
+</select>
+
+<label for="fee">Consultation Plan / शुल्क चुनें</label>
+<select id="fee" name="Consultation Plan" required>
+<option value="">Choose a plan</option>
+<option>Basic - ₹199</option>
+<option>Standard - ₹299</option>
+<option>Premium - ₹499</option>
+</select>
+
+<label for="message">Your Question (Optional) / आपका सवाल</label>
+<textarea id="message" name="Question" rows="3" placeholder="Write your question"></textarea>
+
+<button class="btn" type="submit">Submit Booking / बुकिंग भेजें</button>
+</form>
+
+<p class="note">Booking email delivery requires form activation. Submitting this form does not confirm an appointment.</p>
 </section>
 
 <footer>
