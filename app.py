@@ -1,10 +1,11 @@
-from flask import Flask, jsonify, render_template
+
+from flask import Flask, jsonify, send_file
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return send_file("index.html")
 
 @app.route("/health")
 def health():
